@@ -185,24 +185,18 @@
         <!-- ======= Featuress Section ======= -->
         <section id="features">
             <div class="container" data-aos="fade-up">
-
                 <div class="row">
-
                     <div class="col-lg-8 offset-lg-4">
                         <div class="section-header">
                             <h3 class="section-title">Product Featuress</h3>
                             <span class="section-divider"></span>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-5 features-img">
                         <img src="assets/img/product-features.png" alt="" data-aos="fade-right">
                     </div>
-
                     <div class="col-lg-8 col-md-7 ">
-
                         <div class="row">
-
                             <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
                                 <div class="icon">
                                     <i class="bi bi-briefcase"></i>
@@ -240,15 +234,13 @@
                                 <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum dinoun trade capsule.</p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <!-- End Featuress Section -->
+
+
 
         <!-- ======= Advanced Featuress Section ======= -->
         <section id="advanced-features">
@@ -407,129 +399,117 @@
 
             <body>
 
-                <!-- ======= Dashboard Section ======= -->
-                <section id="dashboard">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1>Dashboard de Cultivo</h1>
 
-                                <!-- Aquí puedes agregar tu dashboard de sensores -->
 
-                                <div class="dashboard-container">
-                                    <!-- Medidor de Temperatura -->
-                                    <div id="temperatura">
-                                        <div class="gauge-container">
-                                            <div class="gauge-value" id="temperatura-gauge">0</div>
-                                            <div class="gauge-label">Temperatura (°C)</div>
+
+                <body>
+                    <title>Dashboard de Cultivo</title>
+                    <section id="dashboard">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1>Dashboard de Cultivo</h1>
+
+                                    <div class="dashboard-container">
+                                        <!-- Medidor de Temperatura -->
+                                        <div id="temperatura">
+                                            <div class="gauge-container">
+                                                <div class="gauge-value" id="temperatura-gauge">0</div>
+                                                <div class="gauge-label">Temperatura (°C)</div>
+                                            </div>
                                         </div>
-                                        <canvas id="temperatura-canvas"></canvas>
+
+                                        <!-- Medidor de Humedad -->
+                                        <div id="humedad">
+                                            <div class="gauge-container">
+                                                <div class="gauge-value" id="humedad-gauge">0</div>
+                                                <div class="gauge-label">Humedad (%)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Medidor de CO2 -->
+                                        <div id="co2">
+                                            <div class="gauge-container">
+                                                <div class="gauge-value" id="co2-gauge">0</div>
+                                                <div class="gauge-label">CO2 (ppm)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Medidor de Luminosidad -->
+                                        <div id="luminosidad">
+                                            <div class="gauge-container">
+                                                <div class="gauge-value" id="luminosidad-gauge">0</div>
+                                                <div class="gauge-label">Luminosidad (lux)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Medidor de pH -->
+                                        <div id="ph">
+                                            <div class="gauge-container">
+                                                <div class="gauge-value" id="ph-gauge">0</div>
+                                                <div class="gauge-label">pH</div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <!-- Medidor de Humedad -->
-                                    <div id="humedad">
-                                        <div class="gauge-container">
-                                            <div class="gauge-value" id="humedad-gauge">0</div>
-                                            <div class="gauge-label">Humedad (%)</div>
-                                        </div>
-                                        <canvas id="humedad-canvas"></canvas>
-                                    </div>
-
-                                    <!-- Medidor de CO2 -->
-                                    <div id="co2">
-                                        <div class="gauge-container">
-                                            <div class="gauge-value" id="co2-gauge">0</div>
-                                            <div class="gauge-label">CO2 (ppm)</div>
-                                        </div>
-                                        <canvas id="co2-canvas"></canvas>
-                                    </div>
-
-                                    <!-- Medidor de Luminosidad -->
-                                    <div id="luminosidad">
-                                        <div class="gauge-container">
-                                            <div class="gauge-value" id="luminosidad-gauge">0</div>
-                                            <div class="gauge-label">Luminosidad (lux)</div>
-                                        </div>
-                                        <canvas id="luminosidad-canvas"></canvas>
-                                    </div>
-
-                                    <!-- Medidor de pH -->
-                                    <div id="ph">
-                                        <div class="gauge-container">
-                                            <div class="gauge-value" id="ph-gauge">0</div>
-                                            <div class="gauge-label">pH</div>
-                                        </div>
-                                        <canvas id="ph-canvas"></canvas>
-                                    </div>
+                                    <div id="datos"></div>
                                 </div>
-
-                                <div id="datos"></div>
-
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- End Dashboard Section -->
+                    </section>
+                    +-+-+-+-+-+-+-+-+-+-+-+-+-+----------------
+                    <div>
+                        <h1>Enfermedades en las hojas del tomate</h1>
 
-                +-+-+-+-+-+-+-+-+-+-+-+-+-+----------------
-                <div>
-                    <h1>Enfermedades en las hojas del tomate</h1>
-
-                    <div class="enfermedades">
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Bacterial_spot.jpg" alt="Tomato_Bacterial_spot">
-                            <h2>Tomato_Bacterial_spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Early_blight.jpg" alt="Tomato_Early_blight">
-                            <h2>Tomato_Early_blight</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_healthy.jpg" alt="Tomato_healthy">
-                            <h2>Tomato_healthy</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Late_blight.jpg" alt="Tomato_Late_blight">
-                            <h2>Tomato_Late_blight</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Leaf_Mold.jpg" alt="Tomato_Leaf_Mold">
-                            <h2>Tomato_Leaf_Mold</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_mosaic_virus.jpg" alt="Tomato_mosaic_virus">
-                            <h2>Tomato_mosaic_virus</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Septoria_leaf_spot.jpg" alt="Tomato_Septoria_leaf_spot">
-                            <h2>Tomato_Septoria_leaf_spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Spider_mites Two-spotted_spider_mite.jpg" alt="Tomato_Spider_mites Two-spotted_spider_mite">
-                            <h2>Tomato_Spider_mites Two-spotted_spider_mite</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Target_Spot.jpg" alt="Tomato_Target_Spot">
-                            <h2>Tomato_Target_Spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <img src="img/Tomato_Yellow_Leaf_Curl_Virus.jpg" alt="Tomato_Yellow_Leaf_Curl_Virus">
-                            <h2>Tomato_Yellow_Leaf_Curl_Virus</h2>
+                        <div class="enfermedades">
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Bacterial_spot.jpg" alt="Tomato Bacterial spot"> -->
+                                <h2>Tomato Bacterial spot</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Early_blight.jpg" alt="Tomato_Early_blight"> -->
+                                <h2>Tomato Early blight</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_healthy.jpg" alt="Tomato_healthy"> -->
+                                <h2>Tomato healthy</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Late_blight.jpg" alt="Tomato_Late_blight"> -->
+                                <h2>Tomato Late blight</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Leaf_Mold.jpg" alt="Tomato_Leaf_Mold"> -->
+                                <h2>Tomato Leaf Mold</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_mosaic_virus.jpg" alt="Tomato_mosaic_virus"> -->
+                                <h2>Tomato mosaic virus</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Septoria_leaf_spot.jpg" alt="Tomato_Septoria_leaf_spot"> -->
+                                <h2>Tomato Septoria leaf spot</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Spider_mites Two-spotted_spider_mite.jpg" alt="Tomato_Spider_mites Two-spotted_spider_mite"> -->
+                                <h2>Tomato Spider mites Two-spotted spider mite</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Target_Spot.jpg" alt="Tomato_Target_Spot"> -->
+                                <h2>Tomato Target Spot</h2>
+                            </div>
+                            <div class="enfermedad">
+                                <!-- <img src="img/Tomato_Yellow_Leaf_Curl_Virus.jpg" alt="Tomato_Yellow_Leaf_Curl_Virus"> -->
+                                <h2>Tomato Yellow Leaf Curl Virus</h2>
+                            </div>
                         </div>
                     </div>
 
                     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            </body>
-            <h1>enfermedades en las hojas del tomate:</h1>
-
-            </div>
-
-
-
-
-
+                </body>
+                </div>
 
 
         </section>
@@ -1249,7 +1229,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-</body>
+    </body>
 
 </html>
 <!DOCTYPE html>
