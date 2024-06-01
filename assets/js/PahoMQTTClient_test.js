@@ -9,6 +9,8 @@ const mqttConfig = {
     topic: "cultivo/sector_uno/tomate",
     useSSL: false
 };
+<!---servicion por ValidityStat >
+
 
 const client = new Paho.MQTT.Client(mqttConfig.brokerUrl, mqttConfig.port, mqttConfig.clientId);
 
