@@ -651,7 +651,7 @@
 --------------------------------*/
     
     .section-header .section-title {
-        font-size: 32px;
+        font-size: 50px;
         color: #111;
         /* Puedes cambiar el color del texto aquí */
         text-align: center;
@@ -660,10 +660,14 @@
     
     .section-header .section-description {
         text-align: center;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         color: #777;
         /* Puedes cambiar el color del texto aquí */
         font-style: italic;
+    }
+    
+    .bi.bi-check-circle {
+        color: red;
     }
     
     .section-header .section-divider {
@@ -675,6 +679,20 @@
         background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+    
+    .custom-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .custom-list li {
+        margin-bottom: 10px;
+        /* Espacio entre los elementos de la lista */
+    }
+    
+    .red-icon {
+        color: red;
     }
     /* Section with background
 --------------------------------*/
