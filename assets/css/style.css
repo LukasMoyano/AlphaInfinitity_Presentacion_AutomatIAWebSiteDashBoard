@@ -1,1007 +1,1002 @@
-                                /* Estilos para la sección del equipo */
-                            
-                            .member {
-                                display: flex;
-                                /* Convierte el contenedor .member en un contenedor flexible */
-                                flex-direction: column;
-                                /* Alinea los elementos hijos en columna (vertical) */
-                                align-items: center;
-                                /* Centra los elementos hijos horizontalmente */
-                                text-align: center;
-                                /* Centra el texto dentro de .member */
-                                padding: 10px;
-                                /* Añade un margen interior de 20px a .member */
-                            }
-                            
-                            .member .pic {
-                                width: 300px;
-                                /* Define el ancho de la imagen a 150px */
-                                height: 300px;
-                                /* Define la altura de la imagen a 150px */
-                                overflow: hidden;
-                                /* Oculta cualquier parte de la imagen que se desborde */
-                                margin-bottom: 5px;
-                                /* Añade un margen inferior de 15px a la imagen */
-                            }
-                            
-                            .member .pic img {
-                                width: 100%;
-                                /* Hace que la imagen ocupe todo el ancho del contenedor .pic */
-                                height: 100%;
-                                /* Hace que la imagen ocupe todo el alto del contenedor .pic */
-                                object-fit: cover;
-                            }
-                            /*--------------------------------------------------------------
-# estilo Enfermedades & Datos
---------------------------------------------------------------*/
-                            
-                            body {
-                                font-family: sans-serif;
-                            }
-                            
-                            .dashboard-container {
-                                display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                                grid-gap: 20px;
-                            }
-                            
-                            .gauge-container {
-                                border: 1px solid #ccc;
-                                padding: 20px;
-                                text-align: center;
-                            }
-                            
-                            .gauge-value {
-                                font-size: 24px;
-                                font-weight: bold;
-                            }
-                            /* Estilos generales */
-                            
-                            body {
-                                font-family: sans-serif;
-                                margin: 0;
-                                padding: 20px;
-                                background-color: #f5f5f5;
-                                /* Fondo gris claro */
-                            }
-                            
-                            h1 {
-                                text-align: center;
-                                margin-bottom: 20px;
-                                color: #d9534f;
-                                /* Rojo tomate */
-                            }
-                            
-                            .enfermedades {
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: center;
-                                gap: 10px;
-                            }
-                            
-                            .enfermedad {
-                                padding: 15px;
-                                border: 1px solid #ccc;
-                                border-radius: 5px;
-                                text-align: center;
-                                background-color: #fff;
-                                /* Blanco */
-                                width: 200px;
-                                /* Ajusta el ancho según sea necesario */
-                                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-                            }
-                            
-                            .enfermedad img {
-                                max-width: 100%;
-                                height: auto;
-                                margin-bottom: 10px;
-                            }
-                            /*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-                            
-                            body {
-                                background: hsl(0, 0%, 100%);
-                                /* Puedes cambiar el color de fondo aquí */
-                                color: #666666;
-                                /* Puedes cambiar el color del texto aquí */
-                                font-family: "Open Sans", sans-serif;
-                                overflow-x: hidden;
-                            }
-                            
-                            a {
-                                color: #d9534f;
-                                /* Rojo tomate */
-                                text-decoration: none;
-                                transition: 0.5s;
-                            }
-                            
-                            a:hover,
-                            a:active,
-                            a:focus {
-                                color: #c9302c;
-                                /* Rojo tomate más intenso */
-                                outline: none;
-                                text-decoration: none;
-                            }
-                            
-                            p {
-                                padding: 0;
-                                margin: 0 0 30px 0;
-                            }
-                            
-                            h1,
-                            h2,
-                            h3,
-                            h4,
-                            h5,
-                            h6 {
-                                font-family: "Montserrat", sans-serif;
-                                font-weight: 400;
-                                margin: 0 0 5px 0;
-                                padding: 0;
-                            }
-                            /*--------------------------------------------------------------
+    /* Estilos para la sección del equipo */
+    
+    .member {
+        display: flex;
+        /* Convierte el contenedor .member en un contenedor flexible */
+        flex-direction: column;
+        /* Alinea los elementos hijos en columna (vertical) */
+        align-items: center;
+        /* Centra los elementos hijos horizontalmente */
+        text-align: center;
+        /* Centra el texto dentro de .member */
+        padding: 10px;
+        /* Añade un margen interior de 20px a .member */
+    }
+    
+    .member .pic {
+        width: 300px;
+        /* Define el ancho de la imagen a 150px */
+        height: 300px;
+        /* Define la altura de la imagen a 150px */
+        overflow: hidden;
+        /* Oculta cualquier parte de la imagen que se desborde */
+        margin-bottom: 5px;
+        /* Añade un margen inferior de 15px a la imagen */
+    }
+    
+    .member .pic img {
+        width: 100%;
+        /* Hace que la imagen ocupe todo el ancho del contenedor .pic */
+        height: 100%;
+        /* Hace que la imagen ocupe todo el alto del contenedor .pic */
+        object-fit: cover;
+        /* Ajusta la imagen para que ocupe todo el espacio disponible mientras mantiene su proporción */
+    }
+    /*--------------------------------------------------------------
+  # estilo Enfermedades & Datos
+  --------------------------------------------------------------*/
+    
+    body {
+        font-family: sans-serif;
+    }
+    
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+    
+    .gauge-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .gauge-value {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    /* Estilos generales */
+    
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+        /* Fondo gris claro */
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d9534f;
+        /* Rojo tomate */
+    }
+    
+    .enfermedades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .enfermedad {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #fff;
+        /* Blanco */
+        width: 200px;
+        /* Ajusta el ancho según sea necesario */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .enfermedad img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+    
+    body {
+        background: hsl(0, 0%, 100%);
+        /* Puedes cambiar el color de fondo aquí */
+        color: #666666;
+        /* Puedes cambiar el color del texto aquí */
+        font-family: "Open Sans", sans-serif;
+        overflow-x: hidden;
+    }
+    
+    a {
+        color: #d9534f;
+        /* Rojo tomate */
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    a:hover,
+    a:active,
+    a:focus {
+        color: #c9302c;
+        /* Rojo tomate más intenso */
+        outline: none;
+        text-decoration: none;
+    }
+    
+    p {
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+    /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-                            
-                            .back-to-top {
-                                position: fixed;
-                                background: linear-gradient(45deg, #d9534f, #c9302c);
-                                /* Rojo tomate */
-                                color: #fff;
-                                border-radius: 4px 4px 0 0;
-                                right: 15px;
-                                bottom: 0;
-                                transition: none;
-                                visibility: hidden;
-                                opacity: 0;
-                                width: 64px;
-                                height: 34px;
-                            }
-                            
-                            .back-to-top i {
-                                line-height: 0;
-                                font-size: 20px;
-                            }
-                            
-                            .back-to-top:focus {
-                                background: linear-gradient(45deg, #d9534f, #c9302c);
-                                /* Rojo tomate */
-                                color: #fff;
-                                outline: none;
-                            }
-                            
-                            .back-to-top:hover {
-                                background: #c9302c;
-                                /* Rojo tomate más intenso */
-                                color: #fff;
-                            }
-                            
-                            .back-to-top.active {
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                            /*--------------------------------------------------------------
+    
+    .back-to-top {
+        position: fixed;
+        background: linear-gradient(45deg, #d9534f, #c9302c);
+        /* Rojo tomate */
+        color: #fff;
+        border-radius: 4px 4px 0 0;
+        right: 15px;
+        bottom: 0;
+        transition: none;
+        visibility: hidden;
+        opacity: 0;
+        width: 64px;
+        height: 34px;
+    }
+    
+    .back-to-top i {
+        line-height: 0;
+        font-size: 20px;
+    }
+    
+    .back-to-top:focus {
+        background: linear-gradient(45deg, #d9534f, #c9302c);
+        /* Rojo tomate */
+        color: #fff;
+        outline: none;
+    }
+    
+    .back-to-top:hover {
+        background: #c9302c;
+        /* Rojo tomate más intenso */
+        color: #fff;
+    }
+    
+    .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-                            
-                            #header {
-                                height: 90px;
-                                transition: all 0.5s;
-                                z-index: 997;
-                                background: linear-gradient(45deg, #d9534f, #c9302c);
-                                /* Rojo tomate */
-                            }
-                            
-                            #header.header-transparent {
-                                background: transparent;
-                            }
-                            
-                            #header.header-scrolled {
-                                background: linear-gradient(45deg, #d9534f, #c9302c);
-                                /* Rojo tomate */
-                                height: 70px;
-                                transition: all 0.5s;
-                            }
-                            
-                            #header #logo h1 {
-                                font-size: 36px;
-                                padding: 0;
-                                margin: 0;
-                                display: inline-block;
-                                font-family: "Montserrat", sans-serif;
-                                font-weight: 300;
-                                letter-spacing: 3px;
-                                text-transform: uppercase;
-                            }
-                            
-                            #header #logo h1 a,
-                            #header #logo h1 a:hover {
-                                color: #fff;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            @media (max-width: 768px) {
-                                #header #logo h1 {
-                                    font-size: 28px;
-                                }
-                                #header #logo img {
-                                    max-height: 40px;
-                                }
-                            }
-                            /*--------------------------------------------------------------
+    
+    #header {
+        height: 90px;
+        transition: all 0.5s;
+        z-index: 997;
+        background: linear-gradient(45deg, #d9534f, #c9302c);
+        /* Rojo tomate */
+    }
+    
+    #header.header-transparent {
+        background: transparent;
+    }
+    
+    #header.header-scrolled {
+        background: linear-gradient(45deg, #d9534f, #c9302c);
+        /* Rojo tomate */
+        height: 70px;
+        transition: all 0.5s;
+    }
+    
+    #header #logo h1 {
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    
+    #header #logo h1 a,
+    #header #logo h1 a:hover {
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    @media (max-width: 768px) {
+        #header #logo h1 {
+            font-size: 28px;
+        }
+        #header #logo img {
+            max-height: 40px;
+        }
+    }
+    /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-                            /**
+    /**
 * Desktop Navigation 
 */
-                            
-                            .navbar {
-                                padding: 0;
-                            }
-                            
-                            .navbar ul {
-                                margin: 0;
-                                padding: 0;
-                                display: flex;
-                                list-style: none;
-                                align-items: center;
-                            }
-                            
-                            .navbar li {
-                                position: relative;
-                            }
-                            
-                            .navbar>ul>li {
-                                white-space: nowrap;
-                                padding: 10px 0 10px 24px;
-                            }
-                            
-                            .navbar a,
-                            .navbar a:focus {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                font-family: "Montserrat", sans-serif;
-                                color: rgba(255, 255, 255, 0.8);
-                                /* Puedes cambiar el color del texto aquí */
-                                font-size: 15px;
-                                padding: 0 2px;
-                                white-space: nowrap;
-                                transition: 0.3s;
-                                letter-spacing: 0.4px;
-                                position: relative;
-                            }
-                            
-                            .navbar a i,
-                            .navbar a:focus i {
-                                font-size: 12px;
-                                line-height: 0;
-                                margin-left: 5px;
-                            }
-                            
-                            .navbar>ul>li>a:before {
-                                content: "";
-                                position: absolute;
-                                width: 100%;
-                                height: 2px;
-                                bottom: -8px;
-                                left: 0;
-                                background-color: #fff;
-                                /* Puedes cambiar el color de la línea aquí */
-                                visibility: hidden;
-                                transform: scaleX(0);
-                                transition: all 0.3s ease-in-out 0s;
-                            }
-                            
-                            .navbar a:hover:before,
-                            .navbar li:hover>a:before,
-                            .navbar .active:before {
-                                visibility: visible;
-                                transform: scaleX(1);
-                            }
-                            
-                            .navbar a:hover,
-                            .navbar .active,
-                            .navbar .active:focus,
-                            .navbar li:hover>a {
-                                color: #fff;
-                                /* Puedes cambiar el color del texto al pasar el ratón aquí */
-                            }
-                            
-                            .navbar .dropdown ul {
-                                display: block;
-                                position: absolute;
-                                left: 24px;
-                                top: calc(100% + 30px);
-                                margin: 0;
-                                padding: 10px 0;
-                                z-index: 99;
-                                opacity: 0;
-                                visibility: hidden;
-                                background: #fff;
-                                /* Puedes cambiar el color de fondo aquí */
-                                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-                                transition: 0.3s;
-                            }
-                            
-                            .navbar .dropdown ul li {
-                                min-width: 200px;
-                            }
-                            
-                            .navbar .dropdown ul a {
-                                padding: 10px 20px;
-                                font-size: 14px;
-                                text-transform: none;
-                                color: #333333;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            .navbar .dropdown ul a i {
-                                font-size: 12px;
-                            }
-                            
-                            .navbar .dropdown ul a:hover,
-                            .navbar .dropdown ul .active:hover,
-                            .navbar .dropdown ul li:hover>a {
-                                color: #1dc8cd;
-                                /* Puedes cambiar el color del texto al pasar el ratón aquí */
-                            }
-                            
-                            .navbar .dropdown:hover>ul {
-                                opacity: 1;
-                                top: 100%;
-                                visibility: visible;
-                            }
-                            
-                            .navbar .dropdown .dropdown ul {
-                                top: 0;
-                                left: calc(100% - 30px);
-                                visibility: hidden;
-                            }
-                            
-                            .navbar .dropdown .dropdown:hover>ul {
-                                opacity: 1;
-                                top: 0;
-                                left: 100%;
-                                visibility: visible;
-                            }
-                            
-                            @media (max-width: 1366px) {
-                                .navbar .dropdown .dropdown ul {
-                                    left: -90%;
-                                }
-                                .navbar .dropdown .dropdown:hover>ul {
-                                    left: -100%;
-                                }
-                            }
-                            /**
+    
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    
+    .navbar li {
+        position: relative;
+    }
+    
+    .navbar>ul>li {
+        white-space: nowrap;
+        padding: 10px 0 10px 24px;
+    }
+    
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;
+        color: rgba(255, 255, 255, 0.8);
+        /* Puedes cambiar el color del texto aquí */
+        font-size: 15px;
+        padding: 0 2px;
+        white-space: nowrap;
+        transition: 0.3s;
+        letter-spacing: 0.4px;
+        position: relative;
+    }
+    
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+    
+    .navbar>ul>li>a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -8px;
+        left: 0;
+        background-color: #fff;
+        /* Puedes cambiar el color de la línea aquí */
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    .navbar a:hover:before,
+    .navbar li:hover>a:before,
+    .navbar .active:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+        color: #fff;
+        /* Puedes cambiar el color del texto al pasar el ratón aquí */
+    }
+    
+    .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 24px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        /* Puedes cambiar el color de fondo aquí */
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+    }
+    
+    .navbar .dropdown ul li {
+        min-width: 200px;
+    }
+    
+    .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 14px;
+        text-transform: none;
+        color: #333333;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    .navbar .dropdown ul a i {
+        font-size: 12px;
+    }
+    
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover>a {
+        color: #1dc8cd;
+        /* Puedes cambiar el color del texto al pasar el ratón aquí */
+    }
+    
+    .navbar .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+    
+    .navbar .dropdown .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+    }
+    
+    .navbar .dropdown .dropdown:hover>ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+    }
+    
+    @media (max-width: 1366px) {
+        .navbar .dropdown .dropdown ul {
+            left: -90%;
+        }
+        .navbar .dropdown .dropdown:hover>ul {
+            left: -100%;
+        }
+    }
+    /**
 * Mobile Navigation 
 */
-                            
-                            .mobile-nav-toggle {
-                                color: #fff;
-                                /* Puedes cambiar el color del texto aquí */
-                                font-size: 28px;
-                                cursor: pointer;
-                                display: none;
-                                line-height: 0;
-                                transition: 0.5s;
-                            }
-                            
-                            @media (max-width: 991px) {
-                                .mobile-nav-toggle {
-                                    display: block;
-                                }
-                                .navbar ul {
-                                    display: none;
-                                }
-                            }
-                            
-                            .navbar-mobile {
-                                position: fixed;
-                                overflow: hidden;
-                                top: 0;
-                                right: 0;
-                                left: 0;
-                                bottom: 0;
-                                background: rgba(26, 26, 26, 0.9);
-                                transition: 0.3s;
-                                z-index: 999;
-                            }
-                            
-                            .navbar-mobile .mobile-nav-toggle {
-                                position: absolute;
-                                top: 15px;
-                                right: 15px;
-                            }
-                            
-                            .navbar-mobile ul {
-                                display: block;
-                                position: absolute;
-                                top: 55px;
-                                right: 15px;
-                                bottom: 15px;
-                                left: 15px;
-                                padding: 10px 0;
-                                background-color: #fff;
-                                /* Puedes cambiar el color de fondo aquí */
-                                overflow-y: auto;
-                                transition: 0.3s;
-                            }
-                            
-                            .navbar-mobile>ul>li {
-                                padding: 0;
-                            }
-                            
-                            .navbar-mobile a:hover:before,
-                            .navbar-mobile li:hover>a:before,
-                            .navbar-mobile .active:before {
-                                visibility: hidden;
-                            }
-                            
-                            .navbar-mobile a,
-                            .navbar-mobile a:focus {
-                                padding: 10px 20px;
-                                font-size: 15px;
-                                color: #333333;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            .navbar-mobile a:hover,
-                            .navbar-mobile .active,
-                            .navbar-mobile li:hover>a {
-                                color: #1dc8cd;
-                                /* Puedes cambiar el color del texto al pasar el ratón aquí */
-                            }
-                            
-                            .navbar-mobile .getstarted,
-                            .navbar-mobile .getstarted:focus {
-                                margin: 15px;
-                            }
-                            
-                            .navbar-mobile .dropdown ul {
-                                position: static;
-                                display: none;
-                                margin: 10px 20px;
-                                padding: 10px 0;
-                                z-index: 99;
-                                opacity: 1;
-                                visibility: visible;
-                                background: #fff;
-                                /* Puedes cambiar el color de fondo aquí */
-                                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-                            }
-                            
-                            .navbar-mobile .dropdown ul li {
-                                min-width: 200px;
-                            }
-                            
-                            .navbar-mobile .dropdown ul a {
-                                padding: 10px 20px;
-                            }
-                            
-                            .navbar-mobile .dropdown ul a i {
-                                font-size: 12px;
-                            }
-                            
-                            .navbar-mobile .dropdown ul a:hover,
-                            .navbar-mobile .dropdown ul .active:hover,
-                            .navbar-mobile .dropdown ul li:hover>a {
-                                color: #1dc8cd;
-                                /* Puedes cambiar el color del texto al pasar el ratón aquí */
-                            }
-                            
-                            .navbar-mobile .dropdown>.dropdown-active {
-                                display: block;
-                            }
-                            /*--------------------------------------------------------------
+    
+    .mobile-nav-toggle {
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+        line-height: 0;
+        transition: 0.5s;
+    }
+    
+    @media (max-width: 991px) {
+        .mobile-nav-toggle {
+            display: block;
+        }
+        .navbar ul {
+            display: none;
+        }
+    }
+    
+    .navbar-mobile {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(26, 26, 26, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+    }
+    
+    .navbar-mobile .mobile-nav-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 0;
+        background-color: #fff;
+        /* Puedes cambiar el color de fondo aquí */
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+    
+    .navbar-mobile>ul>li {
+        padding: 0;
+    }
+    
+    .navbar-mobile a:hover:before,
+    .navbar-mobile li:hover>a:before,
+    .navbar-mobile .active:before {
+        visibility: hidden;
+    }
+    
+    .navbar-mobile a,
+    .navbar-mobile a:focus {
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #333333;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+        color: #1dc8cd;
+        /* Puedes cambiar el color del texto al pasar el ratón aquí */
+    }
+    
+    .navbar-mobile .getstarted,
+    .navbar-mobile .getstarted:focus {
+        margin: 15px;
+    }
+    
+    .navbar-mobile .dropdown ul {
+        position: static;
+        display: none;
+        margin: 10px 20px;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 1;
+        visibility: visible;
+        background: #fff;
+        /* Puedes cambiar el color de fondo aquí */
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+    
+    .navbar-mobile .dropdown ul li {
+        min-width: 200px;
+    }
+    
+    .navbar-mobile .dropdown ul a {
+        padding: 10px 20px;
+    }
+    
+    .navbar-mobile .dropdown ul a i {
+        font-size: 12px;
+    }
+    
+    .navbar-mobile .dropdown ul a:hover,
+    .navbar-mobile .dropdown ul .active:hover,
+    .navbar-mobile .dropdown ul li:hover>a {
+        color: #1dc8cd;
+        /* Puedes cambiar el color del texto al pasar el ratón aquí */
+    }
+    
+    .navbar-mobile .dropdown>.dropdown-active {
+        display: block;
+    }
+    /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-                            
-                            #hero {
-                                width: 100%;
-                                height: 100vh;
-                                background: linear-gradient(45deg, rgba(196, 0, 0, 0.644), #00791acc), url("../img/Default_Automatia_es_una_empresa_innovadora_que_se_dedica_a_la_2.jpg") center top no-repeat;
-                                /* Puedes cambiar la imagen de fondo aquí */
-                                background-size: cover;
-                                position: relative;
-                            }
-                            
-                            @media (min-width: 1025px) {
-                                #hero {
-                                    background-attachment: fixed;
-                                }
-                            }
-                            
-                            @media (max-height: 640px) {
-                                #hero {
-                                    height: 120vh;
-                                }
-                            }
-                            
-                            #hero .hero-text {
-                                position: absolute;
-                                left: 0;
-                                top: 60px;
-                                right: 0;
-                                height: calc(50% - 60px);
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                text-align: center;
-                                flex-direction: column;
-                            }
-                            
-                            #hero h2 {
-                                margin: 30px 0 10px 0;
-                                padding: 0 15px;
-                                font-size: 48px;
-                                font-weight: 400;
-                                line-height: 56px;
-                                color: #fff;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            @media (max-width: 768px) {
-                                #hero h2 {
-                                    font-size: 28px;
-                                    line-height: 36px;
-                                }
-                            }
-                            
-                            #hero p {
-                                color: #fff;
-                                /* Puedes cambiar el color del texto aquí */
-                                margin-bottom: 20px;
-                                padding: 0 15px;
-                                font-size: 24px;
-                            }
-                            
-                            @media (max-width: 768px) {
-                                #hero p {
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                    margin-bottom: 20px;
-                                }
-                            }
-                            
-                            #hero .btn-get-started {
-                                font-family: "Montserrat", sans-serif;
-                                font-weight: 400;
-                                font-size: 16px;
-                                letter-spacing: 1px;
-                                display: inline-block;
-                                padding: 8px 28px;
-                                border-radius: 50px;
-                                transition: 0.5s;
-                                margin: 10px;
-                                border: 2px solid #fff;
-                                /* Puedes cambiar el color del borde aquí */
-                                color: #fff;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            #hero .btn-get-started:hover {
-                                color: #1dc8cd;
-                                /* Puedes cambiar el color del texto al pasar el ratón aquí */
-                                background: #fff;
-                                /* Puedes cambiar el color de fondo al pasar el ratón aquí */
-                            }
-                            
-                            #hero .product-screens {
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                overflow: hidden;
-                                text-align: center;
-                                width: 100%;
-                                height: 50%;
-                            }
-                            
-                            #hero .product-screens img {
-                                box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-                            }
-                            
-                            #hero .product-screens .product-screen-1 {
-                                position: absolute;
-                                z-index: 30;
-                                left: calc(50% + 54px);
-                                bottom: 0;
-                                top: 30px;
-                            }
-                            
-                            #hero .product-screens .product-screen-2 {
-                                position: absolute;
-                                z-index: 20;
-                                left: calc(50% - 154px);
-                                bottom: 0;
-                                top: 90px;
-                            }
-                            
-                            #hero .product-screens .product-screen-3 {
-                                position: absolute;
-                                z-index: 10;
-                                left: calc(50% - 374px);
-                                bottom: 0;
-                                top: 150px;
-                            }
-                            
-                            @media (max-width: 767px) {
-                                #hero .product-screens .product-screen-1 {
-                                    position: static;
-                                    padding-top: 30px;
-                                }
-                                #hero .product-screens .product-screen-2,
-                                #hero .product-screens .product-screen-3 {
-                                    display: none;
-                                }
-                            }
-                            /*--------------------------------------------------------------
+    
+    #hero {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(45deg, rgba(196, 0, 0, 0.644), #00791acc), url("../img/Default_Automatia_es_una_empresa_innovadora_que_se_dedica_a_la_2.jpg") center top no-repeat;
+        /* Puedes cambiar la imagen de fondo aquí */
+        background-size: cover;
+        position: relative;
+    }
+    
+    @media (min-width: 1025px) {
+        #hero {
+            background-attachment: fixed;
+        }
+    }
+    
+    @media (max-height: 640px) {
+        #hero {
+            height: 120vh;
+        }
+    }
+    
+    #hero .hero-text {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        right: 0;
+        height: calc(50% - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    #hero h2 {
+        margin: 30px 0 10px 0;
+        padding: 0 15px;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    @media (max-width: 768px) {
+        #hero h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+    
+    #hero p {
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+        margin-bottom: 20px;
+        padding: 0 15px;
+        font-size: 24px;
+    }
+    
+    @media (max-width: 768px) {
+        #hero p {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    #hero .btn-get-started {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #fff;
+        /* Puedes cambiar el color del borde aquí */
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    #hero .btn-get-started:hover {
+        color: #1dc8cd;
+        /* Puedes cambiar el color del texto al pasar el ratón aquí */
+        background: #fff;
+        /* Puedes cambiar el color de fondo al pasar el ratón aquí */
+    }
+    
+    #hero .product-screens {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    
+    #hero .product-screens img {
+        box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
+    }
+    
+    #hero .product-screens .product-screen-1 {
+        position: absolute;
+        z-index: 30;
+        left: calc(50% + 54px);
+        bottom: 0;
+        top: 30px;
+    }
+    
+    #hero .product-screens .product-screen-2 {
+        position: absolute;
+        z-index: 20;
+        left: calc(50% - 154px);
+        bottom: 0;
+        top: 90px;
+    }
+    
+    #hero .product-screens .product-screen-3 {
+        position: absolute;
+        z-index: 10;
+        left: calc(50% - 374px);
+        bottom: 0;
+        top: 150px;
+    }
+    
+    @media (max-width: 767px) {
+        #hero .product-screens .product-screen-1 {
+            position: static;
+            padding-top: 30px;
+        }
+        #hero .product-screens .product-screen-2,
+        #hero .product-screens .product-screen-3 {
+            display: none;
+        }
+    }
+    /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-                            
-                            section {
-                                overflow: hidden;
-                            }
-                            /* Sections Header
+    
+    section {
+        overflow: hidden;
+    }
+    /* Sections Header
 --------------------------------*/
-                            
-                            .section-header .section-title {
-                                font-size: 32px;
-                                color: #111;
-                                /* Puedes cambiar el color del texto aquí */
-                                text-align: center;
-                                font-weight: 400;
-                            }
-                            
-                            .section-header .section-description {
-                                text-align: center;
-                                padding-bottom: 40px;
-                                color: #777;
-                                /* Puedes cambiar el color del texto aquí */
-                                font-style: italic;
-                            }
-                            
-                            .section-header .section-divider {
-                                display: block;
-                                width: 60px;
-                                height: 3px;
-                                background: #1dc8cd;
-                                /* Puedes cambiar el color de la línea aquí */
-                                background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
-                                margin: 0 auto;
-                                margin-bottom: 20px;
-                            }
-                            /* Section with background
+    
+    .section-header .section-title {
+        font-size: 32px;
+        color: #111;
+        /* Puedes cambiar el color del texto aquí */
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .section-header .section-description {
+        text-align: center;
+        padding-bottom: 40px;
+        color: #777;
+        /* Puedes cambiar el color del texto aquí */
+        font-style: italic;
+    }
+    
+    .section-header .section-divider {
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #1dc8cd;
+        /* Puedes cambiar el color de la línea aquí */
+        background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    /* Section with background
 --------------------------------*/
-                            
-                            .section-bg {
-                                background: #ffffff;
-                                /* Puedes cambiar el color de fondo aquí */
-                            }
-                            /*--------------------------------------------------------------
+    
+    .section-bg {
+        background: #ffffff;
+        /* Puedes cambiar el color de fondo aquí */
+    }
+    /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-                            
-                            .breadcrumbs {
-                                padding: 20px 0;
-                                min-height: 40px;
-                                margin-top: 92px;
-                            }
-                            
-                            @media (max-width: 992px) {
-                                .breadcrumbs {
-                                    margin-top: 68px;
-                                }
-                            }
-                            
-                            .breadcrumbs h2 {
-                                font-size: 24px;
-                                font-weight: 300;
-                                margin: 0;
-                            }
-                            
-                            @media (max-width: 992px) {
-                                .breadcrumbs h2 {
-                                    margin: 0 0 10px 0;
-                                }
-                            }
-                            
-                            .breadcrumbs ol {
-                                display: flex;
-                                flex-wrap: wrap;
-                                list-style: none;
-                                padding: 0;
-                                margin: 0;
-                                font-size: 14px;
-                            }
-                            
-                            .breadcrumbs ol li+li {
-                                padding-left: 10px;
-                            }
-                            
-                            .breadcrumbs ol li+li::before {
-                                display: inline-block;
-                                padding-right: 10px;
-                                color: #6c757d;
-                                /* Puedes cambiar el color del texto aquí */
-                                content: "/";
-                            }
-                            
-                            @media (max-width: 768px) {
-                                .breadcrumbs .d-flex {
-                                    display: block !important;
-                                }
-                                .breadcrumbs ol {
-                                    display: block;
-                                }
-                                .breadcrumbs ol li {
-                                    display: inline-block;
-                                }
-                            }
-                            /* About Us Section
+    
+    .breadcrumbs {
+        padding: 20px 0;
+        min-height: 40px;
+        margin-top: 92px;
+    }
+    
+    @media (max-width: 992px) {
+        .breadcrumbs {
+            margin-top: 68px;
+        }
+    }
+    
+    .breadcrumbs h2 {
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    @media (max-width: 992px) {
+        .breadcrumbs h2 {
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .breadcrumbs ol li+li {
+        padding-left: 10px;
+    }
+    
+    .breadcrumbs ol li+li::before {
+        display: inline-block;
+        padding-right: 10px;
+        color: #6c757d;
+        /* Puedes cambiar el color del texto aquí */
+        content: "/";
+    }
+    
+    @media (max-width: 768px) {
+        .breadcrumbs .d-flex {
+            display: block !important;
+        }
+        .breadcrumbs ol {
+            display: block;
+        }
+        .breadcrumbs ol li {
+            display: inline-block;
+        }
+    }
+    /* About Us Section
 --------------------------------*/
-                            
-                            #about {
-                                padding: 60px 0;
-                                overflow: hidden;
-                            }
-                            
-                            #about .about-img {
-                                height: 510px;
-                                overflow: hidden;
-                                /* Esto asegura que el contenedor no se desborde */
-                                display: flex;
-                                /* Habilitamos Flexbox */
-                                justify-content: center;
-                                /* Centramos la imagen horizontalmente */
-                                align-items: center;
-                                /* Centramos la imagen verticalmente */
-                            }
-                            
-                            #about .about-img img {
-                                max-width: 100%;
-                                /* La imagen no superará el ancho del contenedor */
-                                height: auto;
-                                /* La altura se ajusta automáticamente para mantener la proporción */
-                            }
-                            
-                            @media (max-width: 768px) {
-                                #about .about-img {
-                                    height: auto;
-                                    /* Permitimos que el contenedor se ajuste a la altura de la imagen */
-                                }
-                            }
-                            
-                            #about .content .h2 {
-                                color: #333;
-                                /* Puedes cambiar el color del texto aquí */
-                                font-weight: 300;
-                                font-size: 24px;
-                            }
-                            
-                            #about .content h3 {
-                                color: #777;
-                                /* Puedes cambiar el color del texto aquí */
-                                font-weight: 300;
-                                font-size: 18px;
-                                line-height: 26px;
-                                font-style: italic;
-                            }
-                            
-                            #about .content p {
-                                line-height: 26px;
-                            }
-                            
-                            #about .content p:last-child {
-                                margin-bottom: 0;
-                            }
-                            
-                            #about .content i {
-                                font-size: 20px;
-                                padding-right: 4px;
-                                color: #1dc8cd;
-                                /* Puedes cambiar el color del texto aquí */
-                            }
-                            
-                            #about .content ul {
-                                list-style: none;
-                                padding: 0;
-                            }
-                            
-                            #about .content ul li {
-                                padding-bottom: 10px;
-                            }
-                            /* Product Featuress Section
+    
+    #about {
+        padding: 60px 0;
+        overflow: hidden;
+    }
+    
+    #about .about-img {
+        height: 510px;
+        overflow: hidden;
+    }
+    
+    #about .about-img img {
+        margin-left: -15px;
+        max-width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+        #about .about-img {
+            height: auto;
+        }
+        #about .about-img img {
+            margin-left: 0;
+            padding-bottom: 30px;
+        }
+    }
+    
+    #about .content .h2 {
+        color: #333;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    
+    #about .content h3 {
+        color: #777;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        font-style: italic;
+    }
+    
+    #about .content p {
+        line-height: 26px;
+    }
+    
+    #about .content p:last-child {
+        margin-bottom: 0;
+    }
+    
+    #about .content i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #1dc8cd;
+    }
+    
+    #about .content ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #about .content ul li {
+        padding-bottom: 10px;
+    }
+    /* Product Advanced Featuress Section
 --------------------------------*/
-                            /* Product Featuress Section
---------------------------------*/
-                            
-                            #features {
-                                /* Estilos para el contenedor principal de la sección de características */
-                                background: #ffffff00;
-                                /* Color de fondo blanco */
-                                padding: 60px 0 0 0;
-                                /* Margen interno: 60px arriba, 0 a la derecha, 0 abajo y 0 a la izquierda */
-                                overflow: hidden;
-                                /* Oculta cualquier contenido que se desborde del contenedor */
-                            }
-                            
-                            #features .features-img {
-                                /* Estilos para el contenedor de la imagen dentro de la sección de características */
-                                text-align: center;
-                                /* Alinea el contenido del contenedor al centro */
-                                padding-top: 20px;
-                                /* Margen interno superior de 20px */
-                            }
-                            
-                            @media (min-width: 769px) {
-                                /*  Media query para aplicar estilos en pantallas con un ancho mínimo de 769px (tabletas y escritorios) */
-                                #features .features-img {
-                                    padding-top: 120px;
-                                    /* Margen interno superior de 120px en pantallas grandes */
-                                    margin-top: -200px;
-                                    /* Margen superior negativo de -200px. Esto puede superponer la imagen sobre el contenido anterior */
-                                }
-                            }
-                            
-                            #features .features-img img {
-                                /* Estilos para la imagen dentro del contenedor .features-img. 
-                                 ESTA ES LA REGLA QUE AFECTA DIRECTAMENTE A assets/img/product-features.png */
-                                max-width: 100%;
-                                /* La imagen no excederá el ancho de su contenedor (100%) */
-                            }
-                            
-                            #features .box {
-                                /* Estilos para las cajas de características */
-                                margin-bottom: 15px;
-                                /* Margen inferior de 15px */
-                                text-align: center;
-                                /* Alinea el contenido de la caja al centro */
-                            }
-                            
-                            #features .icon {
-                                /* Estilos para el contenedor del icono dentro de cada caja */
-                                margin-bottom: 10px;
-                                /* Margen inferior de 10px */
-                            }
-                            
-                            #features .icon i {
-                                /* Estilos para el icono dentro del contenedor .icon */
-                                color: #666666;
-                                /* Color gris oscuro */
-                                font-size: 40px;
-                                /* Tamaño de fuente de 40px */
-                                transition: 0.5s;
-                                /* Transición suave de 0.5 segundos para cualquier cambio de estado (como al pasar el ratón) */
-                            }
-                            
-                            #features .icon i:before {
-                                /* Estilos para el pseudo-elemento :before del icono, que se usa para crear un fondo degradado */
-                                background: #cd1d1d;
-                                /* Color de fondo inicial (azul claro) */
-                                background: linear-gradient(45deg, #cd1d1d 0%, #fa5555 100%);
-                                /* Gradiente lineal de 45 grados 
-                                                                   que va de azul claro (#1dc8cd) a verde claro (#55fabe) */
-                                background-clip: border-box;
-                                /* Recorta el fondo al borde del cuadro */
-                                -webkit-background-clip: text;
-                                /* Recorta el fondo al texto (específico para navegadores WebKit) */
-                                -webkit-text-fill-color: transparent;
-                                /* Hace que el texto sea transparente para que se vea el fondo degradado */
-                            }
-                            
-                            #features .title {
-                                /* Estilos para el título de cada característica */
-                                font-weight: 300;
-                                /* Grosor de fuente ligero */
-                                margin-bottom: 15px;
-                                /* Margen inferior de 15px */
-                                font-size: 22px;
-                                /* Tamaño de fuente de 22px */
-                                /* Product Advanced Featuress Section
---------------------------------*/
-                                #advanced-features {
-                                    overflow: hidden;
-                                }
-                                #advanced-features .features-row {
-                                    padding: 60px 0 30px 0;
-                                }
-                                #advanced-features h2 {
-                                    font-size: 26px;
-                                    font-weight: 700;
-                                    color: #000;
-                                    /* Puedes cambiar el color del texto aquí */
-                                }
-                                #advanced-features h3 {
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    font-weight: 400;
-                                    font-style: italic;
-                                    color: #999;
-                                    /* Puedes cambiar el color del texto aquí */
-                                }
-                                #advanced-features p {
-                                    line-height: 24px;
-                                    color: #777;
-                                    /* Puedes cambiar el color del texto aquí */
-                                    margin-bottom: 30px;
-                                }
-                                #advanced-features i {
-                                    color: #666666;
-                                    /* Puedes cambiar el color del texto aquí */
-                                    font-size: 64px;
-                                    transition: 0.5s;
-                                    float: left;
-                                    padding: 0 15px 0px 0;
-                                    line-height: 1;
-                                }
-                                #advanced-features i:before {
-                                    background: #00ff55;
-                                    /* Puedes cambiar el color de la línea aquí */
-                                    background: linear-gradient(45deg, #cd1d1d 0%, #fa5555 100%);
-                                    background-clip: border-box;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-                                }
-                                #advanced-features .advanced-feature-img-right {
-                                    max-width: 100%;
-                                    float: right;
-                                    padding: 0 0 30px 30px;
-                                }
-                                #advanced-features .advanced-feature-img-left {
-                                    max-width: 100%;
-                                    float: left;
-                                    padding: 0 30px 30px 0;
-                                }
-                                @media (max-width: 768px) {
-                                    #advanced-features .advanced-feature-img-right,
-                                    #advanced-features .advanced-feature-img-left {
-                                        max-width: 50%;
-                                    }
-                                }
-                                @media (max-width: 767px) {
-                                    #advanced-features .advanced-feature-img-right,
-                                    #advanced-features .advanced-feature-img-left {
-                                        max-width: 100%;
-                                        float: none;
-                                        padding: 0 0 30px 0;
-                                    }
-                                }
-                                /* Call To Action Section
---------------------------------*/
-                                #call-to-action {
-                                    overflow: hidden;
-                                    background: linear-gradient(#cd1d1da6, #cd1d1d33), url(../img/zHrUBw1BfWHVCOP7QVpm--1--712tr.jpg) fixed center center;
-                                    /* Puedes cambiar la imagen de fondo aquí */
-                                    background-size: cover;
-                                    padding: 80px 0;
-                                }
-                                #call-to-action .cta-title {
-                                    color: #fff;
-                                    /* Puedes cambiar el color del texto aquí */
-                                    font-size: 28px;
-                                    font-weight: 700;
-                                }
-                                #call-to-action .cta-text {
-                                    color: #fff;
-                                    /* Puedes cambiar el color del texto aquí */
-                                }
-                            }
-                            
-                            @media (min-width: 769px) {
-                                #call-to-action .cta-btn-container {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: flex-end;
-                                }
-                            }
-                            
-                            #call-to-action .cta-btn {
-                                font-family: "Montserrat", sans-serif;
-                                font-weight: 500;
-                                font-size: 16px;
-                                letter-spacing: 1px;
+    
+    #advanced-features {
+        overflow: hidden;
+    }
+    
+    #advanced-features .features-row {
+        padding: 60px 0 30px 0;
+    }
+    
+    #advanced-features h2 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+    }
+    
+    #advanced-features h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: italic;
+        color: #999;
+    }
+    
+    #advanced-features p {
+        line-height: 24px;
+        color: #777;
+        margin-bottom: 30px;
+    }
+    
+    #advanced-features i {
+        color: #666666;
+        font-size: 64px;
+        transition: 0.5s;
+        float: left;
+        padding: 0 15px 0px 0;
+        line-height: 1;
+    }
+    
+    #advanced-features i:before {
+        background: #1dc8cd;
+        background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #advanced-features .advanced-feature-img-right {
+        max-width: 100%;
+        float: right;
+        padding: 0 0 30px 30px;
+    }
+    
+    #advanced-features .advanced-feature-img-left {
+        max-width: 100%;
+        float: left;
+        padding: 0 30px 30px 0;
+    }
+    
+    @media (max-width: 768px) {
+        #advanced-features .advanced-feature-img-right,
+        #advanced-features .advanced-feature-img-left {
+            max-width: 50%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        #advanced-features .advanced-feature-img-right,
+        #advanced-features .advanced-feature-img-left {
+            max-width: 100%;
+            float: none;
+            padding: 0 0 30px 0;
+        }
+    }
+    
+    #advanced-features {
+        overflow: hidden;
+    }
+    
+    .features-row {
+        padding: 60px 0 30px 0;
+    }
+    
+    #advanced-features h2 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    #advanced-features h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: italic;
+        color: #999;
+        /* Puedes cambiar el color del texto aquí */
+    }
+    
+    #advanced-features p {
+        line-height: 24px;
+        color: #777;
+        /* Puedes cambiar el color del texto aquí */
+        margin-bottom: 30px;
+    }
+    
+    #advanced-features i {
+        color: #666666;
+        /* Puedes cambiar el color del texto aquí */
+        font-size: 64px;
+        transition: 0.5s;
+        line-height: 1;
+    }
+    
+    #advanced-features i:before {
+        background: #00ff55;
+        /* Puedes cambiar el color de la línea aquí */
+        background: linear-gradient(45deg, #cd1d1d 0%, #fa5555 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .advanced-feature-img {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    /* Responsive Styles */
+    
+    @media (max-width: 768px) {
+        .features-row {
+            display: flex;
+            /* Make the row a flexbox container */
+            flex-wrap: wrap;
+            /* Allow items to wrap on smaller screens */
+        }
+        .advanced-feature-img {
+            flex: 1 1 50%;
+            /* Set image width to 50% on smaller screens */
+            margin-bottom: 0;
+            /* Remove margin-bottom for better flow */
+        }
+        #advanced-features i {
+            font-size: 48px;
+            /* Adjust icon size for smaller screens */
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .features-row {
+            flex-direction: column;
+            /* Stack elements vertically on extra small screens */
+        }
+        .advanced-feature-img {
+            margin-bottom: 30px;
+            /* Reintroduce margin-bottom for better spacing */
+        }
+    }
+    /*-------------------------------Call To Action Section--------------------------------*/
+    
+    #call-to-action {
+        overflow: hidden;
+        background: linear-gradient(#cd1d1da6, #cd1d1d33), url(../img/zHrUBw1BfWHVCOP7QVpm--1--712tr.jpg) fixed center center;
+        /* Puedes cambiar la imagen de fondo aquí */
+        background-size: cover;
+        padding: 80px 0;
+    }
+    
+    #call-to-action .cta-title {
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    #call-to-action .cta-text {
+        color: #fff;
+        /* Puedes cambiar el color del texto aquí */
+    }
+}
+@media (min-width: 769px) {
+    #call-to-action .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+#call-to-action .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
