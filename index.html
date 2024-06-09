@@ -204,7 +204,7 @@
     <section>
         <div>
             <h2>
-                <p>Aqui vamos a poner el diagrama de flujo del funcionamiento de la IA - APP</p>
+                <p>Diagrama de flujo funcionamiento de la IA - APP</p>
             </h2>
             <img class="advanced-feature-img-right wow fadeInRight responsive-img" src="assets/img/Diagram_-_flowchart-AutomatIA_operation.png" alt="Diagrama de flujo del funcionamiento de la IA - APP">
         </div>
@@ -286,8 +286,21 @@
         </div>
     </section>
 
+    <script>
+        function openPDF() {
+            var pdfWindow = window.open('', 'popup', 'width=800,height=600');
+            pdfWindow.document.write('<html><head><title>AutomatIA - Análisis de Seguridad</title></head><body>');
+            pdfWindow.document.write('<embed src="forms/AutomatIA_AISecurity.pdf" type="application/pdf" width="100%" height="100%">');
+            pdfWindow.document.write('</body></html>');
+        }
+    </script>
 
 
+    <section>
+        <h1>Anexos</h1>
+        <h1>Análisis de seguridad</h1>
+        <a href="#" onclick="openPDF()">Abrir Análisis de Seguridad</a>
+    </section>
 
 
 
