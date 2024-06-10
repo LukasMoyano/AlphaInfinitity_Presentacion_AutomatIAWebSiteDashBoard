@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en_es">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AutomatIA App server</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -25,55 +24,37 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-</head>
 
+    <script src="assets/js/PahoMQTTClient.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
 
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex justify-content-between align-items-center">
-
             <div id="logo">
-                <h1>
-                    <a href="index.html">AutomatIA</a>
-                </h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+                <h1><a href="index.html">AutomatIA</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li>
-                        <a class="nav-link scrollto active" href="#hero">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#about">Que es</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#features">Caracteristicas</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#pricing">Pricing</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#contact">Contact</a>
-                    </li>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Que es</a></li>
+                    <li><a class="nav-link scrollto" href="#features">Caracteristicas</a></li>
+                    <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
-            <!-- .navbar -->
         </div>
     </header>
     <!-- End Header -->
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-
         <div class="hero-text" data-aos="zoom-out">
             <h2>Bienvenidos a AutomatIA</h2>
             <p>We are team of talented designers making websites with Bootstrap</p>
@@ -81,21 +62,16 @@
         </div>
 
         <div class="product-screens">
-
             <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
                 <img src="assets/img/AutomatIIA_interface003.jpg" alt="">
             </div>
-
             <div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
                 <img src="assets/img/AutomatIIA_interface001.jpg" alt="">
             </div>
-
             <div class="product-screen-3" data-aos="fade-up">
                 <img src="assets/img/AutomatIIA_interface002.jpg" alt="">
             </div>
-
         </div>
-
     </section>
     <!-- End Hero Section -->
 
@@ -115,30 +91,20 @@
                     <img src="assets/img/AutomatIA001.jpeg" alt="">
                 </div>
                 <div class="col-lg-6 contnt" data-aos="fade-left" data-aos-delay="100">
-                    <h2>Un desarrollo de IA de última generacion que monitorea y optimiza los cultivos de tomate en tiempo real, proporcionando de calidad para tomar las mejores decisiones agrícolas informadas.
-                    </h2>
-                    <p>
-                        Una solución innovadora que aumenta la productividad, reduce pérdidas y mejora la rentabilidad.
-                    </p>
+                    <h2>Un desarrollo de IA de última generacion que monitorea y optimiza los cultivos de tomate en tiempo real, proporcionando de calidad para tomar las mejores decisiones agrícolas informadas.</h2>
+                    <p>Una solución innovadora que aumenta la productividad, reduce pérdidas y mejora la rentabilidad.</p>
                     <ul class="custom-list">
-                        <li>
-                            <i class="bi bi-check-circle"></i> Sensores y cámaras de alta resolución recopilan datos sobre el estado del cultivo en tiempo real.
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle"></i> La IA analiza los datos e identifica patrones para detectar enfermedades, predecir el rendimiento y optimizar las condiciones de crecimiento.
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle"></i> La IA ofrece una solución innovadora para optimizar la producción de tomate, un cultivo de alto valor y demanda global.
-                        </li>
+                        <li><i class="bi bi-check-circle"></i> Sensores y cámaras de alta resolución recopilan datos sobre el estado del cultivo en tiempo real.</li>
+                        <li><i class="bi bi-check-circle"></i> La IA analiza los datos e identifica patrones para detectar enfermedades, predecir el rendimiento y optimizar las condiciones de crecimiento.</li>
+                        <li><i class="bi bi-check-circle"></i> La IA ofrece una solución innovadora para optimizar la producción de tomate, un cultivo de alto valor y demanda global.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- End About Section -->
 
-    <!-- ======= Featuress Section ======= -->
+    <!-- ======= Features Section ======= -->
     <section id="features">
         <div class="container" data-aos="fade-up">
             <div class="row">
@@ -151,47 +117,29 @@
                 <div class="col-lg-4 col-md-5 features-img">
                     <img src="assets/img/product-features.png" alt="" data-aos="fade-right">
                 </div>
-                <div class="col-lg-8 col-md-7 ">
+                <div class="col-lg-8 col-md-7">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                            <div class="icon">
-                                <i class="bi bi-briefcase"></i>
-                            </div>
-                            <h4 class="title">
-                                <a href="">Monitoreo Integral de Plantas</a>
-                            </h4>
+                            <div class="icon"><i class="bi bi-briefcase"></i></div>
+                            <h4 class="title"><a href="">Monitoreo Integral de Plantas</a></h4>
                             <p class="description">Nuestro desarrollo combina datos de múltiples sensores y cámaras para ofrecer una visión completa del estado de las plantas en los cultivos de tomate. Esto incluye condiciones ambientales y visuales, permitiendo una detección
-                                temprana de enfermedades.
-                            </p>
+                                temprana de enfermedades.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                            <div class="icon">
-                                <i class="bi bi-card-checklist"></i>
-                            </div>
-                            <h4 class="title">
-                                <a href="">Transmisión Eficiente de datos</a>
-                            </h4>
+                            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                            <h4 class="title"><a href="">Transmisión Eficiente de datos</a></h4>
                             <p class="description">Utilizando tecnología como LoRaWAN, garantiza una transmisión de datos confiable y de bajo consumo energético a largas distancias, para AutomatIA es ideal en la implementaciones en campos agrícolas extensos donde el acceso
                                 a la red puede ser limitado.</p>
                         </div>
-                        <div class="col-lg-6 col-md-6 box" data-aos="fade-up" dat-aos-delay="100">
-                            <div class="icon">
-                                <i class="bi bi-binoculars"></i>
-                            </div>
-                            <h4 class="title">
-                                <a href="">Análisis Avanzado con IA</a>
-                            </h4>
+                        <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon"><i class="bi bi-binoculars"></i></div>
+                            <h4 class="title"><a href="">Análisis Avanzado con IA</a></h4>
                             <p class="description">Los datos recopilados son analizados mediante algoritmos de inteligencia artificial que identifican patrones y anormalidades. Esta capacidad de análisis avanzado permite la detección proactiva de enfermedades y problemas de
-                                crecimiento en las plantas.
-                            </p>
+                                crecimiento en las plantas.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon">
-                                <i class="bi bi-brightness-high"></i>
-                            </div>
-                            <h4 class="title">
-                                <a href="">Interfaz de Usuario Amigable</a>
-                            </h4>
+                            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                            <h4 class="title"><a href="">Interfaz de Usuario Amigable</a></h4>
                             <p class="description">La información y los resultados del análisis se presentan en un dashboard intuitivo y accesible desde cualquier dispositivo con acceso a la web. Esto facilita la toma de decisiones informadas y la gestión efectiva del cultivo.</p>
                         </div>
                     </div>
@@ -199,56 +147,10 @@
             </div>
         </div>
     </section>
-    <!-- End Featuress Section -->
+    <!-- End Features Section -->
 
-    <section>
-        <div>
-            <h2>
-                <p>Diagrama de flujo funcionamiento de la IA - APP</p>
-            </h2>
-            <img class="advanced-feature-img-right wow fadeInRight responsive-img" src="assets/img/Diagram_-_flowchart-AutomatIA_operation.png" alt="Diagrama de flujo del funcionamiento de la IA - APP">
-        </div>
-    </section>
-
-    <!-- ======= Advanced Featuress Section ======= -->
+    <!-- ======= Advanced Features Section ======= -->
     <section id="advanced-features">
-
-        <div class="features-row section-bg" data-aos="fade-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <img class="advanced-feature-img-left" src="assets/img/advanced-feature-1.jpg" alt="">
-                        <div>
-                            <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="features-row" data-aos="fade-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <img class="advanced-feature-img-right wow fadeInRight" src="assets/img/advanced-feature-2.jpg" alt="">
-                        <div>
-                            <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                            <i class="bi bi-calendar4-week"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            <i class="bi bi-bar-chart"></i>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                            <i class="bi bi-brightness-high"></i>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="features-row section-bg" data-aos="fade-up">
             <div class="container">
                 <div class="row">
@@ -285,6 +187,7 @@
             </div>
         </div>
     </section>
+    <!-- End Advanced Features Section -->
 
     <script>
         function openPDF() {
@@ -295,14 +198,11 @@
         }
     </script>
 
-
     <section>
         <h1>Anexos</h1>
         <h1>Análisis de seguridad</h1>
         <a href="#" onclick="openPDF()">Abrir Análisis de Seguridad</a>
     </section>
-
-
 
     <section>
         <main>
@@ -367,10 +267,8 @@
                                         <div class="gauge-label">pH</div>
                                     </div>
                                 </div>
-                                <section>
-
-
                             </div>
+
                             <div id="datos-panel">
                                 <h2>Datos del Sensor</h2>
                                 <table id="datos-tabla">
@@ -409,869 +307,746 @@
                 </div>
             </div>
         </main>
-        <<< </section>
+    </section>
 
-            +-+-+-+-+-+-+-+-+-+-+-+-+
+    <section id="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Dashboard de Cultivo</h1>
 
-
-
-
-            <section id="dashboard">
-
-                <body>
-                    <main>
-                        <title>Dashboard de Cultivo</title>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h1>Dashboard de Cultivo</h1>
-
-                                    <div class="dashboard-container">
-                                        <!-- Medidor de Temperatura -->
-                                        <div id="temperatura">
-                                            <div class="gauge-container">
-                                                <div class="gauge-value" id="temperatura-gauge">0</div>
-                                                <div class="gauge-label">Temperatura (°C)</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Medidor de Humedad -->
-                                        <div id="humedad">
-                                            <div class="gauge-container">
-                                                <div class="gauge-value" id="humedad-gauge">0</div>
-                                                <div class="gauge-label">Humedad (%)</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Medidor de CO2 -->
-                                        <div id="co2">
-                                            <div class="gauge-container">
-                                                <div class="gauge-value" id="co2-gauge">0</div>
-                                                <div class="gauge-label">CO2 (ppm)</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Medidor de Luminosidad -->
-                                        <div id="luminosidad">
-                                            <div class="gauge-container">
-                                                <div class="gauge-value" id="luminosidad-gauge">0</div>
-                                                <div class="gauge-label">Luminosidad (lux)</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Medidor de pH -->
-                                        <div id="ph">
-                                            <div class="gauge-container">
-                                                <div class="gauge-value" id="ph-gauge">0</div>
-                                                <div class="gauge-label">pH</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="datos"></div>
-                                </div>
+                    <div class="dashboard-container">
+                        <!-- Medidor de Temperatura -->
+                        <div id="temperatura">
+                            <div class="gauge-container">
+                                <div class="gauge-value" id="temperatura-gauge">0</div>
+                                <div class="gauge-label">Temperatura (°C)</div>
                             </div>
                         </div>
-            </section>
-            **************************************************************
 
+                        <!-- Medidor de Humedad -->
+                        <div id="humedad">
+                            <div class="gauge-container">
+                                <div class="gauge-value" id="humedad-gauge">0</div>
+                                <div class="gauge-label">Humedad (%)</div>
+                            </div>
+                        </div>
 
+                        <!-- Medidor de CO2 -->
+                        <div id="co2">
+                            <div class="gauge-container">
+                                <div class="gauge-value" id="co2-gauge">0</div>
+                                <div class="gauge-label">CO2 (ppm)</div>
+                            </div>
+                        </div>
 
-            <Section>
+                        <!-- Medidor de Luminosidad -->
+                        <div id="luminosidad">
+                            <div class="gauge-container">
+                                <div class="gauge-value" id="luminosidad-gauge">0</div>
+                                <div class="gauge-label">Luminosidad (lux)</div>
+                            </div>
+                        </div>
 
-
-
-                <div>
-                    <h1>Enfermedades en las hojas del tomate</h1>
-
-                    <div class="enfermedades">
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Bacterial_spot.jpg" alt="Tomato Bacterial spot"> -->
-                            <h2>Tomato Bacterial spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Early_blight.jpg" alt="Tomato_Early_blight"> -->
-                            <h2>Tomato Early blight</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_healthy.jpg" alt="Tomato_healthy"> -->
-                            <h2>Tomato healthy</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Late_blight.jpg" alt="Tomato_Late_blight"> -->
-                            <h2>Tomato Late blight</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Leaf_Mold.jpg" alt="Tomato_Leaf_Mold"> -->
-                            <h2>Tomato Leaf Mold</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_mosaic_virus.jpg" alt="Tomato_mosaic_virus"> -->
-                            <h2>Tomato mosaic virus</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Septoria_leaf_spot.jpg" alt="Tomato_Septoria_leaf_spot"> -->
-                            <h2>Tomato Septoria leaf spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Spider_mites Two-spotted_spider_mite.jpg" alt="Tomato_Spider_mites Two-spotted_spider_mite"> -->
-                            <h2>Tomato Spider mites Two-spotted spider mite</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Target_Spot.jpg" alt="Tomato_Target_Spot"> -->
-                            <h2>Tomato Target Spot</h2>
-                        </div>
-                        <div class="enfermedad">
-                            <!-- <img src="img/Tomato_Yellow_Leaf_Curl_Virus.jpg" alt="Tomato_Yellow_Leaf_Curl_Virus"> -->
-                            <h2>Tomato Yellow Leaf Curl Virus</h2>
-                        </div>
-                    </div>
-                </div>
-
-                </body>
-                </div>
-            </Section>
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-            </section>
-            <!-- End Advanced Featuress Section -->
-
-            <!-- ======= Call To Action Section ======= -->
-            <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9 text-center text-lg-start">
-                            <h3 class="cta-title">Call To Action</h3>
-                            <p class="cta-text">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <div class="col-lg-3 cta-btn-container text-center">
-                            <a class="cta-btn align-middle" href="#">Call To Action</a>
+                        <!-- Medidor de pH -->
+                        <div id="ph">
+                            <div class="gauge-container">
+                                <div class="gauge-value" id="ph-gauge">0</div>
+                                <div class="gauge-label">pH</div>
+                            </div>
                         </div>
                     </div>
 
+                    <div id="datos"></div>
                 </div>
-            </section>
-            <!-- End Call To Action Section -->
+            </div>
+        </div>
+    </section>
 
-            <!-- ======= More Features Section ======= -->
-            <section id="more-features" class="section-bg">
-                <div class="container" data-aos="fade-up">
+    <section>
+        <div>
+            <h1>Enfermedades en las hojas del tomate</h1>
 
-                    <div class="section-header">
-                        <h3 class="section-title">More Features</h3>
-                        <span class="section-divider"></span>
-                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            <div class="enfermedades">
+                <div class="enfermedad">
+                    <h2>Tomato Bacterial spot</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Early blight</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato healthy</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Late blight</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Leaf Mold</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato mosaic virus</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Septoria leaf spot</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Spider mites Two-spotted spider mite</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Target Spot</h2>
+                </div>
+                <div class="enfermedad">
+                    <h2>Tomato Yellow Leaf Curl Virus</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start">
+                    <h3 class="cta-title">Call To Action</h3>
+                    <p class="cta-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="#">Call To Action</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= More Features Section ======= -->
+    <section id="more-features" class="section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h3 class="section-title">More Features</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-briefcase"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box">
+                        <div class="icon"><i class="bi bi-binoculars"></i></div>
+                        <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End More Features Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-2"><img src="assets/img/clients/client-1.png" alt=""></div>
+                <div class="col-md-2"><img src="assets/img/clients/client-2.png" alt=""></div>
+                <div class="col-md-2"><img src="assets/img/clients/client-3.png" alt=""></div>
+                <div class="col-md-2"><img src="assets/img/clients/client-4.png" alt=""></div>
+                <div class="col-md-2"><img src="assets/img/clients/client-5.png" alt=""></div>
+                <div class="col-md-2"><img src="assets/img/clients/client-6.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h3 class="section-title">Pricing</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="box">
+                        <h3>Free</h3>
+                        <h4><sup>$</sup>0<span>month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check-circle"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera</li>
+                            <li><i class="bi bi-check-circle"></i> Pharetra massa massa ultricies</li>
+                            <li><i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="#" class="get-started-btn">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="box featured">
+                        <h3>Business</h3>
+                        <h4><sup>$</sup>29<span>month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check-circle"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera</li>
+                            <li><i class="bi bi-check-circle"></i> Pharetra massa massa ultricies</li>
+                            <li><i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="#" class="get-started-btn">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="box">
+                        <h3>Developer</h3>
+                        <h4><sup>$</sup>49<span>month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check-circle"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera</li>
+                            <li><i class="bi bi-check-circle"></i> Pharetra massa massa ultricies</li>
+                            <li><i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="#" class="get-started-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq">
+        <div class="container">
+
+            <div class="section-header">
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                </p>
+            </div>
+
+            <ul class="faq-list">
+
+                <li>
+                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
                         </p>
                     </div>
+                </li>
 
-                    <div class="row gy-4">
-
-                        <div class="col-lg-6">
-                            <div class="box">
-                                <div class="icon">
-                                    <i class="bi bi-briefcase"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="">Lorem Ipsum</a>
-                                </h4>
-                                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="box">
-                                <div class="icon">
-                                    <i class="bi bi-card-checklist"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="">Dolor Sitema</a>
-                                </h4>
-                                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="box">
-                                <div class="icon">
-                                    <i class="bi bi-bar-chart"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="">Sed ut perspiciatis</a>
-                                </h4>
-                                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="box">
-                                <div class="icon">
-                                    <i class="bi bi-binoculars"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="">Magni Dolores</a>
-                                </h4>
-                                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
-                            </div>
-                        </div>
-
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
                     </div>
-                </div>
-            </section>
-            <!-- End More Features Section -->
-
-            <!-- ======= Clients Section ======= -->
-            <section id="clients">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="row">
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-1.png" alt="">
-                        </div>
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-2.png" alt="">
-                        </div>
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-3.png" alt="">
-                        </div>
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-4.png" alt="">
-                        </div>
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-5.png" alt="">
-                        </div>
-
-                        <div class="col-md-2">
-                            <img src="assets/img/clients/client-6.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- End Clients Section -->
-
-            <!-- ======= Pricing Section ======= -->
-            <section id="pricing" class="section-bg">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="section-header">
-                        <h3 class="section-title">Pricing</h3>
-                        <span class="section-divider"></span>
-                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                            cursus turpis massa tincidunt dui.
                         </p>
                     </div>
+                </li>
 
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="box">
-                                <h3>Free</h3>
-                                <h4>
-                                    <sup>$</sup>0<span>
-                  month</span>
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Quam adipiscing vitae proin
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nec feugiat nisl pretium
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Pharetra massa massa ultricies
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit
-                                    </li>
-                                </ul>
-                                <a href="#" class="get-started-btn">Get Started</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="box featured">
-                                <h3>Business</h3>
-                                <h4>
-                                    <sup>$</sup>29<span>
-                  month</span>
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Quam adipiscing vitae proin
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nec feugiat nisl pretium
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Pharetra massa massa ultricies
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit
-                                    </li>
-                                </ul>
-                                <a href="#" class="get-started-btn">Get Started</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="box">
-                                <h3>Developer</h3>
-                                <h4>
-                                    <sup>$</sup>49<span>
-                  month</span>
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Quam adipiscing vitae proin
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nec feugiat nisl pretium
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Pharetra massa massa ultricies
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit
-                                    </li>
-                                </ul>
-                                <a href="#" class="get-started-btn">Get Started</a>
-                            </div>
-                        </div>
-
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
                     </div>
-                </div>
-            </section>
-            <!-- End Pricing Section -->
-
-            <!-- ======= Frequently Asked Questions Section ======= -->
-            <section id="faq">
-                <div class="container">
-
-                    <div class="section-header">
-                        <h3 class="section-title">Frequently Asked Questions</h3>
-                        <span class="section-divider"></span>
-                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                            molestie at elementum eu facilisis sed odio morbi quis
                         </p>
                     </div>
+                </li>
 
-                    <ul class="faq-list">
-
-                        <li>
-                            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
-                                    molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                                </p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
-                                <i class="bi bi-chevron-down icon-show"></i>
-                                <i class="bi bi-chevron-up icon-close"></i>
-                            </div>
-                            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque
-                                    diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                                </p>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-            <!-- End Frequently Asked Questions Section -->
-
-            <section id="team" class="section-bg">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-header">
-                        <h3 class="section-title">Our Team</h3>
-                        <span class="section-divider"></span>
-                        <p class="section-description">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                            cursus turpis massa tincidunt dui.
                         </p>
                     </div>
-                    <div class="row">
-                        <!-- Oscarl Bertel -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/oscar.jpeg" alt="">
-                                </div>
-                                <h3>Oscarl Bertel</h3>
-                                <h4>Cientifico de Datos</h4>
-                                <h5>CTO</h5>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                </li>
 
-                        <!-- El Profe. Willson -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/william.jpeg" alt="">
-                                </div>
-                                <h3>El Profe. Willson</h3>
-                                <h4>el es el Profe</h4>
-                                <span>Chift</span>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Vladimir -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/vladimir.jpeg" alt="">
-                                </div>
-                                <h3>Vladimir</h3>
-                                <h4>CTO</h4>
-                                <h5>Vladimir</h5>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Adriana -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/adriana.jpeg" alt="">
-                                </div>
-                                <h3>Adriana</h3>
-                                <h4>Doctora en Fisica</h4>
-                                <h5>Product Manager</h5>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Laura -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/laura.jpg" alt="">
-                                </div>
-                                <h3>Laura</h3>
-                                <span>Artista Visual</span>
-                                <span>UX/UI</span>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <!-- ... -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Don Hector -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/HECTOR.jpeg" alt="">
-                                </div>
-                                <h3>Don Hector</h3>
-                                <h4>Security Manager</h4>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <!-- ... -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Jhon -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="member">
-                                <div class="pic">
-                                    <img src="assets/img/team/JHON.jpeg" alt="">
-                                </div>
-                                <h3>Jhon</h3>
-                                <h4>CTO</h4>
-                                <h5>JHON</h5>
-                                <div class="social">
-                                    <a href="">
-                                        <i class="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Lukas Moyano -->
-                        <div class="col-lg-3 col-md-6 mb-4 ">
-                            <div class="member ">
-                                <div class="pic ">
-                                    <img src="assets/img/team/lukas.jpeg" alt=" ">
-                                </div>
-                                <h3>Lukas Moyano</h3>
-                                <h4>Artista Visual</h5>
-                                    <h5>UX/UI</h5>
-                                    <div class="social">
-                                        <a href="">
-                                            <i class="bi bi-twitter"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="bi bi-instagram"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
                     </div>
-                </div>
-            </section>
-            <!-- End Team Section -->
-
-            <!-- ======= Gallery Section ======= -->
-            <section id="gallery ">
-                <div class="container-fluid " data-aos="fade-up ">
-                    <div class="section-header ">
-                        <h3 class="section-title ">Galeria</h3>
-                        <span class="section-divider "></span>
-                        <p class="section-description ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
                         </p>
                     </div>
+                </li>
 
-                    <div class="row g-0 ">
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-1.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-1.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-2.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-2.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-3.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-3.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-4.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-4.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-5.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-5.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 ">
-                            <div class="gallery-item ">
-                                <a href="assets/img/gallery/gallery-6.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
-                                    <img src="assets/img/gallery/gallery-6.jpg " alt=" ">
-                                </a>
-                            </div>
-                        </div>
-
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+                        <i class="bi bi-chevron-down icon-show"></i>
+                        <i class="bi bi-chevron-up icon-close"></i>
                     </div>
+                    <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque
+                            diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                        </p>
+                    </div>
+                </li>
 
+            </ul>
+
+        </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+    <section id="team" class="section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h3 class="section-title">Our Team</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                </p>
+            </div>
+            <div class="row">
+                <!-- Oscarl Bertel -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/oscar.jpeg" alt="">
+                        </div>
+                        <h3>Oscarl Bertel</h3>
+                        <h4>Cientifico de Datos</h4>
+                        <h5>CTO</h5>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <!-- End Gallery Section -->
 
-            <!-- ======= Contact Section ======= -->
-            <!-- ======= Footer ======= -->
-            <section id="contact ">
-                <div class="container " data-aos="fade-up ">
-                    <div class="row ">
-
-                        <div class="col-lg-4 col-md-4 ">
-                            <div class="contact-about ">
-                                <h3>Alpha Infinity</h3>
-                                <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                                <div class="social-links ">
-                                    <a href="# " class="twitter ">
-                                        <i class="bi bi-twitter "></i>
-                                    </a>
-                                    <a href="# " class="facebook ">
-                                        <i class="bi bi-facebook "></i>
-                                    </a>
-                                    <a href="# " class="instagram ">
-                                        <i class="bi bi-instagram "></i>
-                                    </a>
-                                    <a href="# " class="instagram ">
-                                        <i class="bi bi-instagram "></i>
-                                    </a>
-                                    <a href="# " class="linkedin ">
-                                        <i class="bi bi-linkedin "></i>
-                                    </a>
-                                </div>
-                            </div>
+                <!-- El Profe. Willson -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/william.jpeg" alt="">
                         </div>
-
-                        <div class="col-lg-3 col-md-4 ">
-                            <div class="info ">
-                                <div>
-                                    <i class="bi bi-geo-alt "></i>
-                                    <p>Avenida Simepre Viva 123<br>Bogotâ, D.C. 110021</p>
-                                </div>
-
-                                <div>
-                                    <i class="bi bi-envelope "></i>
-                                    <p>info@example.com</p>
-                                </div>
-
-                                <div>
-                                    <i class="bi bi-phone "></i>
-                                    <p>+57 319 7919742</p>
-                                </div>
-
-                            </div>
+                        <h3>El Profe. Willson</h3>
+                        <h4>el es el Profe</h4>
+                        <span>Chift</span>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
                         </div>
-
-                        <div class="col-lg-5 col-md-8 ">
-                            <div class="form ">
-                                <form action="forms/contact.php " method="post " role="form " class="php-email-form ">
-                                    <div class="row ">
-                                        <div class="form-group col-lg-6 ">
-                                            <input type="text " name="name " class="form-control " id="name " placeholder="Your Name " data-rule="minlen:4 " data-msg="Please enter at least 4 chars ">
-                                        </div>
-                                        <div class="form-group col-lg-6 mt-3 mt-lg-0 ">
-                                            <input type="email " class="form-control " name="email " id="email " placeholder="Your Email " data-rule="email " data-msg="Please enter a valid email ">
-                                        </div>
-                                    </div>
-                                    <div class="form-group mt-3 ">
-                                        <input type="text " class="form-control " name="subject " id="subject " placeholder="Subject " data-rule="minlen:4 " data-msg="Please enter at least 8 chars of subject ">
-                                    </div>
-                                    <div class="form-group mt-3 ">
-                                        <textarea class="form-control " name="message " rows="5 " placeholder="Message " required></textarea>
-                                    </div>
-                                    <div class="my-3 ">
-                                        <div class="loading ">Loading</div>
-                                        <div class="error-message "></div>
-                                        <div class="sent-message ">Your message has been sent. Thank you!</div>
-                                    </div>
-                                    <div class="text-center ">
-                                        <button type="submit " title="Send Message ">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
-            </section>
-            <!-- End Contact Section -->
 
-            </main>
-            <!-- End #main -->
-
-            <!-- ======= Footer ======= -->
-            <footer id="footer ">
-                <div class="container ">
-                    <div class="row ">
-                        <div class="col-lg-6 text-lg-start text-center ">
-                            <div class="copyright ">
-                                &copy; Copyright
-                                <strong>Alpha Infinity</strong>. All Rights Reserved
-                            </div>
-                            >
-                            <div class="col-lg-6 ">
-                                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0 ">
-                                    <a href="#intro " class="scrollto ">Home</a>
-                                    <a href="#about " class="scrollto ">About</a>
-                                    <a href="# ">Privacy Policy</a>
-                                    <a href="# ">Terms of Use</a>
-                                </nav>
-                            </div>
+                <!-- Vladimir -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/vladimir.jpeg" alt="">
+                        </div>
+                        <h3>Vladimir</h3>
+                        <h4>CTO</h4>
+                        <h5>Vladimir</h5>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
                         </div>
                     </div>
-            </footer>
-            <!-- End  Footer -->
+                </div>
 
-            <a href="# " class="back-to-top d-flex align-items-center justify-content-center ">
-                <i class="bi bi-chevron-up "></i>
-            </a>
+                <!-- Adriana -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/adriana.jpeg" alt="">
+                        </div>
+                        <h3>Adriana</h3>
+                        <h4>Doctora en Fisica</h4>
+                        <h5>Product Manager</h5>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Vendor JS Files -->
-            <script src="assets/vendor/aos/aos.js "></script>
-            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-            <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
-            <script src="assets/vendor/php-email-form/validate.js "></script>
+                <!-- Laura -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/laura.jpg" alt="">
+                        </div>
+                        <h3>Laura</h3>
+                        <span>Artista Visual</span>
+                        <span>UX/UI</span>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <!-- ... -->
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Template Main JS File -->
-            <script src="assets/js/main.js "></script>
+                <!-- Don Hector -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/HECTOR.jpeg" alt="">
+                        </div>
+                        <h3>Don Hector</h3>
+                        <h4>Security Manager</h4>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <!-- ... -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jhon -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="assets/img/team/JHON.jpeg" alt="">
+                        </div>
+                        <h3>Jhon</h3>
+                        <h4>CTO</h4>
+                        <h5>JHON</h5>
+                        <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lukas Moyano -->
+                <div class="col-lg-3 col-md-6 mb-4 ">
+                    <div class="member ">
+                        <div class="pic ">
+                            <img src="assets/img/team/lukas.jpeg" alt=" ">
+                        </div>
+                        <h3>Lukas Moyano</h3>
+                        <h4>Artista Visual</h5>
+                            <h5>UX/UI</h5>
+                            <div class="social">
+                                <a href="">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery ">
+        <div class="container-fluid " data-aos="fade-up ">
+            <div class="section-header ">
+                <h3 class="section-title ">Galeria</h3>
+                <span class="section-divider "></span>
+                <p class="section-description ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                </p>
+            </div>
+
+            <div class="row g-0 ">
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-1.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-1.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-2.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-2.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-3.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-3.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-4.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-4.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-5.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-5.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="gallery-item ">
+                        <a href="assets/img/gallery/gallery-6.jpg " data-gall="portfolioGallery " class="gallery-lightbox ">
+                            <img src="assets/img/gallery/gallery-6.jpg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- ======= Footer ======= -->
+    <section id="contact ">
+        <div class="container " data-aos="fade-up ">
+            <div class="row ">
+
+                <div class="col-lg-4 col-md-4 ">
+                    <div class="contact-about ">
+                        <h3>Alpha Infinity</h3>
+                        <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                        <div class="social-links ">
+                            <a href="# " class="twitter ">
+                                <i class="bi bi-twitter "></i>
+                            </a>
+                            <a href="# " class="facebook ">
+                                <i class="bi bi-facebook "></i>
+                            </a>
+                            <a href="# " class="instagram ">
+                                <i class="bi bi-instagram "></i>
+                            </a>
+                            <a href="# " class="instagram ">
+                                <i class="bi bi-instagram "></i>
+                            </a>
+                            <a href="# " class="linkedin ">
+                                <i class="bi bi-linkedin "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 ">
+                    <div class="info ">
+                        <div>
+                            <i class="bi bi-geo-alt "></i>
+                            <p>Avenida Simepre Viva 123<br>Bogotâ, D.C. 110021</p>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-envelope "></i>
+                            <p>info@example.com</p>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-phone "></i>
+                            <p>+57 319 7919742</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-8 ">
+                    <div class="form ">
+                        <form action="forms/contact.php " method="post " role="form " class="php-email-form ">
+                            <div class="row ">
+                                <div class="form-group col-lg-6 ">
+                                    <input type="text " name="name " class="form-control " id="name " placeholder="Your Name " data-rule="minlen:4 " data-msg="Please enter at least 4 chars ">
+                                </div>
+                                <div class="form-group col-lg-6 mt-3 mt-lg-0 ">
+                                    <input type="email " class="form-control " name="email " id="email " placeholder="Your Email " data-rule="email " data-msg="Please enter a valid email ">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3 ">
+                                <input type="text " class="form-control " name="subject " id="subject " placeholder="Subject " data-rule="minlen:4 " data-msg="Please enter at least 8 chars of subject ">
+                            </div>
+                            <div class="form-group mt-3 ">
+                                <textarea class="form-control " name="message " rows="5 " placeholder="Message " required></textarea>
+                            </div>
+                            <div class="my-3 ">
+                                <div class="loading ">Loading</div>
+                                <div class="error-message "></div>
+                                <div class="sent-message ">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center ">
+                                <button type="submit " title="Send Message ">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 text-lg-start text-center ">
+                    <div class="copyright ">
+                        &copy; Copyright
+                        <strong>Alpha Infinity</strong>. All Rights Reserved
+                    </div>
+                    >
+                    <div class="col-lg-6 ">
+                        <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0 ">
+                            <a href="#intro " class="scrollto ">Home</a>
+                            <a href="#about " class="scrollto ">About</a>
+                            <a href="# ">Privacy Policy</a>
+                            <a href="# ">Terms of Use</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a href="# " class="back-to-top d-flex align-items-center justify-content-center ">
+        <i class="bi bi-chevron-up "></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js "></script>
 
 </body>
 
@@ -1292,8 +1067,7 @@
 <body>
 
 
-    <script src="assets/js/PahoMQTTClient.js "></script>
-    <script src="assets/js/main.js "></script>
+
 </body>
 
 </html>

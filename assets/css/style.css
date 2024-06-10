@@ -983,16 +983,18 @@
         color: #fff;
         /* Puedes cambiar el color del texto aquí */
     }
-}
-@media (min-width: 769px) {
-    #call-to-action .cta-btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    
+    @media (min-width: 769px) {
+        #call-to-action .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
-}
-#call-to-action .cta-btn {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
+    
+    #call-to-action .cta-btn {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }

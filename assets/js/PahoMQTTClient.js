@@ -19,81 +19,25 @@ client.onConnectionLost = function(responseObject) {
     }
 };
 
-// Datos del gráfico
-let dateData = [];
-let temperatureData = [];
-
-// Inicializar el gráfico de ECharts
-var dom = document.getElementById('chart-container');
-var myChart = echarts.init(dom, 'dark', {
-    renderer: 'canvas',
-    useDirtyRect: false
-});
-
-var option = {
-    tooltip: {
-        trigger: 'axis',
-        position: function(pt) {
-            return [pt[0], '10%'];
-        }
-    },
-    title: {
-        left: 'center',
-        text: 'Temperatura en Tiempo Real'
-    },
-    toolbox: {
-        feature: {
-            dataZoom: {
-                yAxisIndex: 'none'
-            },
-            restore: {},
-            saveAsImage: {}
-        }
-    },
+// Crear el gráfico utilizando echarts
+const myChart = echarts.init(document.getElementById('main-chart'));
+const option = {
     xAxis: {
         type: 'category',
-        boundaryGap: false,
-        data: dateData
+        data: []
     },
     yAxis: {
-        type: 'value',
-        boundaryGap: [0, '100%']
+        type: 'value'
     },
-    dataZoom: [{
-            type: 'inside',
-            start: 0,
-            end: 10
-        },
-        {
-            start: 0,
-            end: 10
-        }
-    ],
     series: [{
-        name: 'Temperatura',
-        type: 'line',
-        symbol: 'none',
-        sampling: 'lttb',
-        itemStyle: {
-            color: 'rgb(255, 70, 131)'
-        },
-        areaStyle: {
-            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                    offset: 0,
-                    color: 'rgb(255, 158, 68)'
-                },
-                {
-                    offset: 1,
-                    color: 'rgb(255, 70, 131)'
-                }
-            ])
-        },
-        data: temperatureData
+        data: [],
+        type: 'line'
     }]
 };
 
 myChart.setOption(option);
 
+// Función para manejar los mensajes recibidos
 export function onMessageArrived(message) {
     const mqttData = JSON.parse(message.payloadString);
 
@@ -137,9 +81,11 @@ export function onMessageArrived(message) {
     });
 }
 
+// Función para manejar la conexión exitosa
 export function onConnect() {
     console.log("¡Conectado al broker MQTT!");
     client.subscribe(mqttConfig.topic);
 }
 
+// Conectar al broker MQTT
 client.connect({ onSuccess: onConnect, useSSL: mqttConfig.useSSL });
