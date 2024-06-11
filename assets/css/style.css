@@ -803,15 +803,24 @@
         #about .content ul li {
             padding-bottom: 10px;
         }
-        /* Product Advanced Featuress Section
+        /* Product Advanced Features Section
 --------------------------------*/
+        
+        #imageCarousel .carousel-item img {
+            object-fit: contain;
+            /* Cubrir todo el contenedor manteniendo la relación de aspecto */
+            height: 100%;
+            /* Establece la altura de la imagen al 100% de la altura del contenedor */
+            width: 100%;
+            /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+        }
         
         #advanced-features {
             overflow: hidden;
         }
         
         #advanced-features .features-row {
-            padding: 60px 0 30px 0;
+            padding: 6px 0 3px 0;
         }
         
         #advanced-features h2 {
@@ -860,7 +869,6 @@
         #advanced-features .advanced-feature-img-left {
             max-width: 100%;
             height: auto;
-            /* Para mantener la proporción original de la imagen */
             padding: 0 30px 30px 0;
         }
         
@@ -880,58 +888,43 @@
             }
         }
         
-        #advanced-features {
-            overflow: hidden;
-        }
-        
-        .features-row {
-            padding: 60px 0 30px 0;
-        }
-        
-        #advanced-features h2 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #000;
-            /* Puedes cambiar el color del texto aquí */
-        }
-        
-        #advanced-features h3 {
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            font-style: italic;
-            color: #999;
-            /* Puedes cambiar el color del texto aquí */
-        }
-        
-        #advanced-features p {
-            line-height: 24px;
-            color: #777;
-            /* Puedes cambiar el color del texto aquí */
-            margin-bottom: 30px;
-        }
-        
-        #advanced-features i {
-            color: #666666;
-            /* Puedes cambiar el color del texto aquí */
-            font-size: 64px;
-            transition: 0.5s;
-            line-height: 1;
-        }
-        
-        #advanced-features i:before {
-            background: #00ff55;
-            /* Puedes cambiar el color de la línea aquí */
-            background: linear-gradient(45deg, #cd1d1d 0%, #fa5555 100%);
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
         .advanced-feature-img {
             max-width: 100%;
             height: auto;
+            object-fit: contain;
+            /* Ajustar el tamaño de la imagen para que quepa dentro del contenedor sin perder la proporción original */
             margin-bottom: 30px;
+        }
+        /* Estilos específicos para el carrusel */
+        
+        .carousel-inner {
+            width: 100%;
+            height: 400px;
+            /* Altura fija para el contenedor del carrusel */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+        }
+        
+        .carousel-inner img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            /* Asegura que la imagen mantenga sus proporciones dentro del contenedor */
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo semi-transparente para mejor visibilidad */
+            border-radius: 50%;
+        }
+        
+        .carousel-control-prev-icon:hover,
+        .carousel-control-next-icon:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Más oscuro al pasar el ratón */
         }
         
         @media (min-width: 768px) {
@@ -945,8 +938,8 @@
                 padding-right: 15px;
             }
             .advanced-feature-img {
-                flex: 0 0 50%;
-                padding-left: 15px;
+                flex: 0 0 0%;
+                padding-left: 0px;
                 margin-bottom: 0;
             }
         }
