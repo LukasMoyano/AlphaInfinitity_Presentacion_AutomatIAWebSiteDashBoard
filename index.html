@@ -192,10 +192,30 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-column flex-md-row">
                         <div class="advanced-feature-img-left wow fadeInLeft">
-                            <p>Para solucionarlo, se aplicó una técnica llamada "aumento de datos", que es como crear más fotos de tomates a partir de las existentes. Se usaron técnicas como transformaciones morfológicas (cambiar el tamaño, la forma, etc.)
-                                para crear nuevas variaciones de las imágenes.</p>
-                            <p>Una vez que se tuvo un conjunto de datos equilibrado, con 10.000 ejemplos por cada categoría de tomate, llegó el momento de enseñarle al modelo a identificarlos. Se utilizó un algoritmo llamado YOLO, que funciona como un detective
-                                buscando pistas en las imágenes.</p>
+                            <p>Una vez que se tuvo un conjunto de datos equilibrado, con 5.000 ejemplos por cada categoría de enfermedad en la hoja del tomate, llegó el momento de enseñarle al modelo a identificarlos. Se utilizó un algoritmo llamado YOLO,
+                                que funciona como un detective buscando pistas en las imágenes.
+                            </p>
+                            <p>Para ayudar al detective YOLO, se creó un sistema que automáticamente detectaba el contorno de cada hoja del tomate generando un recuadro (bounding box) que lo delimitaba. Esto facilitaba al algoritmo encontrar las hojas y
+                                detectar las enfermedades en las imágenes.
+                            </p>
+
+                        </div>
+                        <img class="advanced-feature-img" src="/assets/img/Advanced_Featuress_Section/Advanced_Featuress_Section0001.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advanced-features">
+        <div class="features-row section-bg aos-init aos-animate" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column flex-md-row">
+                        <div class="advanced-feature-img-left wow fadeInLeft">
+                            <p>Sin embargo, no todo era perfecto, para entrenar Yolo necesitábamos tener los contornos de alta calidad y la técnica de conversión de contornos no era 100% precisa, por lo que se creó un sistema de corrección que revisaba los
+                                recuadros y los ajustaba si era necesario.</p>
+                            <p>¡Y así, el modelo de reconocimiento de tomates estaba listo para identificar diferentes variedades con gran precisión!</p>
 
                         </div>
                         <img class="advanced-feature-img" src="/assets/img/Advanced_Featuress_Section/Advanced_Featuress_Section0001.jpeg" alt="">
@@ -258,7 +278,7 @@
             <section>
                 <h1>Anexos</h1>
                 <h1>Análisis de seguridad</h1>
-                <a href="forms/AutomatIA_AISecurity.pdf " download="AutomatIA_AISecurity.pdf ">
+                <a href="forms/AutomatIA_AISecurity.pdf" download="AutomatIA_AISecurity.pdf ">
                     Descargar Análisis de Seguridad
                 </a>
             </section>
